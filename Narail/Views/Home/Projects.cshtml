@@ -1,0 +1,120 @@
+﻿
+@{
+    ViewBag.Title = "Projects";
+    Layout = "~/Views/shared/_Layout.cshtml";
+}
+
+<section class="purchase-section" style="background-image:url(@Url.Content("~/Content/site/images/background/5.jpg)");">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="column col-md-8 col-sm-12 col-xs-12">
+                <h2>We Are The Best Consulting Company Ever!!</h2>
+            </div>
+            <div class="btn-column col-md-4 col-sm-12 col-xs-12">
+                <a href="#" class="btn-style-seven">Purchase Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="portfolio portfolio-style-two padd-1">
+    <div class="container">
+        <div class="sec-title center">
+            <h2>Our <span>Projects</span></h2>
+        </div>
+
+        <!--Filter-->
+        <div class="filters clearfix filters-style-two">
+            <ul class="filter-tabs filter-btns">
+                <li class="filter active" data-role="button" data-filter="all"><span>All</span></li>
+                <li class="filter" data-role="button" data-filter=".BRANDING"><span>Branding</span></li>
+                <li class="filter" data-role="button" data-filter=".LOGO"><span>Consulting</span></li>
+                <li class="filter" data-role="button" data-filter=".ILLUSTRATION"><span>Office</span></li>
+                <li class="filter" data-role="button" data-filter=".VIDEO"><span>Video</span></li>
+            </ul>
+        </div>
+
+        <div class="row filter-list">
+            <div class="projects-block-one mix all col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <figure class="image">
+                        <img src="@Url.Content("~/Content/site/images/project/1.jpg")" alt="image">
+                        <div class="overlay">
+                            <a href="project-single.html"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                    <div class="caption-title">
+                        <h3><a href="project-single.html">Project Item Title</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-block-one mix all BRANDING col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <figure class="image">
+                        <img src="@Url.Content("~/Content/site/images/project/2.jpg")" alt="image">
+                        <div class="overlay">
+                            <a href="project-single.html"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                    <div class="caption-title">
+                        <h3><a href="project-single.html">Project Item Title</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-block-one mix all LOGO ILLUSTRATION col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <figure class="image">
+                        <img src="@Url.Content("~/Content/site/images/project/3.jpg")" alt="image">
+                        <div class="overlay">
+                            <a href="project-single.html"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                    <div class="caption-title">
+                        <h3><a href="project-single.html">Project Item Title</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-block-one mix all VIDEO col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <figure class="image">
+                        <img src="@Url.Content("~/Content/site/images/project/4.jpg")" alt="image">
+                        <div class="overlay">
+                            <a href="project-single.html"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                    <div class="caption-title">
+                        <h3><a href="project-single.html">Project Item Title</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-block-one mix all LOGO col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <figure class="image">
+                        <img src="@Url.Content("~/Content/site/images/project/5.jpg")" alt="image">
+                        <div class="overlay">
+                            <a href="project-single.html"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                    <div class="caption-title">
+                        <h3><a href="project-single.html">Project Item Title</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-block-one mix all BRANDING col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="inner-box">
+                    <figure class="image">
+                        <img src="@Url.Content("~/Content/site/images/project/6.jpg")" alt="image">
+                        <div class="overlay">
+                            <a href="project-single.html"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                    <div class="caption-title">
+                        <h3><a href="project-single.html">Project Item Title</a></h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

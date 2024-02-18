@@ -1,0 +1,106 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="inner-banner has-base-color-overlay text-center" style="background: url(/Content/Site/images/background/1.jpg);">
+    <div class="container">
+        <div class="box">
+            <h3>News details</h3>
+        </div><!-- /.box -->
+    </div><!-- /.container -->
+</div>
+<div class="breadcumb-wrapper">
+    <div class="container">
+        <div class="pull-left">
+            <ul class="list-inline link-list">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">news</a>
+                </li>
+                <li>
+                    news details
+                </li>
+            </ul><!-- /.list-line -->
+        </div><!-- /.pull-left -->
+        <div class="pull-right">
+            <a href="#" class="get-qoute"><i class="fa fa-share"></i>share</a>
+        </div><!-- /.pull-right -->
+    </div><!-- /.container -->
+</div>
+
+<div class="sidebar-page-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <section class="blog-section padd-2">
+                    <div class="large-blog-news single-blog-post single-blog wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="img-box">
+                            <img src="images/blog/bs.jpg" alt="News">
+                        </div>
+                        <div class="lower-content">
+                            <div class="post-meta">By admin  /  March 12, 2018  /  03 Comments</div>
+                            <h4><a href="blog-details.html">Get a credit online with our team’s professional help business strategy of the process.</a></h4>
+
+                            <div class="text">
+                                Lorem ipsum dolor sit amet, vix an natum labitur eleifend, mel amet a laorit menandri. Ei justo complectitur duo. Ei mundi solet ut soletu mel possit quo. Sea cu justo laudem. An utinam consulatu eos, est facilis suscipiantur te, vim te iudico delenit voluptatibus. Lorem ipsum dolor sit amet, vix an natum labitur eleifend, mel amet a laorit menandri. Ei justo complectitur duo. Ei mundi solet ut soletu mel possit quo. Sea cu justo laudem. An utinam consulatu eos, est facilis suscipiantur te, vim te iudico delenit voluptatibus. Lorem ipsum dolor sit amet, vix an natum labitur eleifend, mel amet a laorit menandri. Ei justo complectitur duo. Ei mundi solet ut soletu mel possit quo. Sea cu justo laudem. An utinam consulatu eos, est facilis suscipiantur te, vim te iudico delenit voluptatibus.
+                            </div>
+                        </div><br>
+                        <blockquote>Donec sollicitudin molestie erat sit amet elementum. Donec at lacinia massa, eu hen rit ex. Donec hendrerit, porttitor.Donec sollicitudin molestie erat sit amet elementum. Donec at lacinia massa, eu hen rit ex. Donec hendrerit, porttitor.</blockquote><br>
+                        <div class="text">
+                            <p>
+                                Finibus ante et, imperdiet finibus risus. Donec malesuada luctus elit nec hendrerit. Integer ex sap ien, eleifend sit amet tellus ut, porttitor dictum velit. Nulla scelerisque, nisl eu maximus bibendum nibh risus eleifend ex, id dapibus leo dui in nulla.
+                                Lorem ipsum dolor sit amet, vix an natum labitur eleifend, mel amet a laorit menandri. Ei justo complectitur duo. Ei mundi solet ut soletu mel possit quo. Sea cu justo laudem. An utinam consulatu eos, est facilis suscipiantur te, vim te iudico delenit voluptatibus. <br><br>Lorem ipsum dolor sit amet, vix an natum labitur eleifend, mel amet a laorit menandri. Ei justo complectitur duo. Ei mundi solet ut soletu mel possit quo. Sea cu justo laudem. An utinam consulatu eos, est facilis suscipiantur te, vim te iudico delenit voluptatibus. Lorem ipsum dolor sit amet, vix an natum labitur eleifend, mel amet a laorit menandri. Ei justo complectitur duo. Ei mundi solet ut soletu mel possit quo. Sea cu justo laudem. An utinam consulatu eos, est facilis suscipiantur te, vim te iudico delenit voluptatibus.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="share-box clearfix">
+                        <ul class="tag-box pull-left">
+                            <li>Tags:</li>
+                            <li><a href="#">Business,</a></li>
+                            <li><a href="#">Finance,</a></li>
+                            <li><a href="#">Consulting,</a></li>
+                            <li><a href="#">Funding,</a></li>
+                        </ul>
+                        <div class="social-box pull-right">
+                            <span>Share <i class="fa fa-share"></i></span>
+                            <ul class="list-inline social">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!--Comments Area-->
+
+
+
+                    <div class="add_your_review">
+                        <div class="inner-title">
+                            <h3>Leave a comment</h3>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="blog-sidebar padd-4">
+
+                    @Html.Action("Category", "Blog")
+
+                    @Html.Action("Populer", "Blog")
+
+                    @Html.Action("Tag", "Blog")
+
+
+                    <br>
+                    <br>
+                </div> <!-- End of .wrapper -->
+            </div>
+        </div>
+    </div>
+</div>

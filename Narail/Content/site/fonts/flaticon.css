@@ -1,0 +1,65 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 08/11/2017 12:07
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-inclined-rocket:before { content: "\f100"; }
+.flaticon-atomic-structure-1:before { content: "\f101"; }
+.flaticon-atomic-structure:before { content: "\f102"; }
+.flaticon-shield:before { content: "\f103"; }
+.flaticon-layers:before { content: "\f104"; }
+.flaticon-note:before { content: "\f105"; }
+.flaticon-application:before { content: "\f106"; }
+.flaticon-rocket-ship:before { content: "\f107"; }
+.flaticon-stats:before { content: "\f108"; }
+.flaticon-circular-clock-tool:before { content: "\f109"; }
+.flaticon-signs:before { content: "\f10a"; }
+.flaticon-travel:before { content: "\f10b"; }
+.flaticon-email:before { content: "\f10c"; }
+.flaticon-envelope:before { content: "\f10d"; }
+.flaticon-technology:before { content: "\f10e"; }
+.flaticon-telephone:before { content: "\f10f"; }
+.flaticon-people:before { content: "\f110"; }
+.flaticon-happiness:before { content: "\f111"; }
+.flaticon-business:before { content: "\f112"; }
+.flaticon-meeting:before { content: "\f113"; }
+.flaticon-cup:before { content: "\f114"; }
+.flaticon-competition:before { content: "\f115"; }
+.flaticon-first-prize-trophy:before { content: "\f116"; }
+.flaticon-add:before { content: "\f117"; }
+.flaticon-tool:before { content: "\f118"; }
+.flaticon-graphic-2:before { content: "\f119"; }
+.flaticon-graphic-3:before { content: "\f11a"; }
+.flaticon-connection:before { content: "\f11b"; }
+.flaticon-money:before { content: "\f11c"; }
+.flaticon-graphic:before { content: "\f11d"; }
+.flaticon-graphic-1:before { content: "\f11e"; }
+.flaticon-line-graph:before { content: "\f11f"; }
+.flaticon-ascendant-bars-graphic:before { content: "\f120"; }
+.flaticon-presentation:before { content: "\f121"; }

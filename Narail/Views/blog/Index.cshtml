@@ -1,0 +1,133 @@
+﻿﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="inner-banner has-base-color-overlay text-center" style="background: url(/Content/Site/images/background/1.jpg);">
+    <div class="container">
+        <div class="box">
+            <h3>News grid view</h3>
+        </div><!-- /.box -->
+    </div><!-- /.container -->
+</div>
+<div class="breadcumb-wrapper">
+    <div class="container">
+        <div class="pull-left">
+            <ul class="list-inline link-list">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">news</a>
+                </li>
+                <li>
+                    news grid view
+                </li>
+            </ul><!-- /.list-line -->
+        </div><!-- /.pull-left -->
+        <div class="pull-right">
+            <a href="#" class="get-qoute"><i class="fa fa-share"></i>share</a>
+        </div><!-- /.pull-right -->
+    </div><!-- /.container -->
+</div>
+
+<div class="sidebar-page-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <section class="news-section padd-2">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <!--News Style One-->
+                            <div class="news-style-one">
+                                <div class="inner-box">
+                                    <div class="image">
+                                        <img src="~/Content/Site/images/blog/1.jpg" alt="">
+                                        <div class="post-time">22 Jan, 2018</div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <h3><a href="blog-details.html">We Make you to Grow your Business</a></h3>
+                                        <div class="text">
+                                            Consectetur adipiscing elit. Curabitur libero enim, lacinia finibus ante et, imperdiet finibus risus.
+                                        </div>
+                                        <div class="link-btn2 center">
+                                            <a href="blog-details.html" class="btn-style-two">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="news-style-one">
+                                <div class="inner-box">
+                                    <div class="image">
+                                        <img src="~/Content/Site/images/blog/2.jpg" alt="">
+                                        <div class="post-time">22 Jan, 2018</div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <h3><a href="blog-details.html">We Make you to Grow your Business</a></h3>
+                                        <div class="text">
+                                            Consectetur adipiscing elit. Curabitur libero enim, lacinia finibus ante et, imperdiet finibus risus.
+                                        </div>
+                                        <div class="link-btn2 center">
+                                            <a href="blog-details.html" class="btn-style-two">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <!--News Style One-->
+                            <div class="news-style-one">
+                                <div class="inner-box">
+                                    <div class="image">
+                                        <img src="~/Content/Site/images/blog/3.jpg" alt="">
+                                        <div class="post-time">22 Jan, 2018</div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <h3><a href="blog-details.html">We Make you to Grow your Business</a></h3>
+                                        <div class="text">
+                                            Consectetur adipiscing elit. Curabitur libero enim, lacinia finibus ante et, imperdiet finibus risus.
+                                        </div>
+                                        <div class="link-btn2 center">
+                                            <a href="blog-details.html" class="btn-style-two">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <br>
+                    <ul class="page_pagination style-2 center">
+                        <li><a href="#" class="tran3s"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                        <li><a href="#" class="active tran3s">1</a></li>
+                        <li><a href="#" class="tran3s">2</a></li>
+                        <li><a href="#" class="tran3s">3</a></li>
+                        <li><a href="#" class="tran3s"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                    </ul>
+
+                </section>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="blog-sidebar padd-4">
+
+                    @Html.Action("Category", "Blog")
+
+                    @Html.Action("Populer", "Blog")
+
+                    @Html.Action("Tag", "Blog")
+
+                    <br><br>
+
+                </div> <!-- End of .wrapper -->
+            </div>
+        </div>
+    </div>
+</div>
