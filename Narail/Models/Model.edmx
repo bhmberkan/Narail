@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="NarailDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="NarailDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <!--Errors Found During Generation:
 warning 6002: The table/view 'NarailDB.dbo.Author' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="Author">
@@ -21,6 +21,7 @@ warning 6002: The table/view 'NarailDB.dbo.Author' does not have a primary key d
           <Property Name="ModifyDate" Type="datetime" />
           <Property Name="ModifyBy" Type="nvarchar" MaxLength="50" />
           <Property Name="Image" Type="nvarchar" MaxLength="100" />
+          <Property Name="Role" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityContainer Name="NarailDBModelStoreContainer">
           <EntitySet Name="Author" EntityType="Self.Author" store:Type="Tables" store:Schema="dbo">
@@ -34,15 +35,18 @@ warning 6002: The table/view 'NarailDB.dbo.Author' does not have a primary key d
     [Author].[AddedBy] AS [AddedBy], 
     [Author].[ModifyDate] AS [ModifyDate], 
     [Author].[ModifyBy] AS [ModifyBy], 
-    [Author].[Image] AS [Image]
+    [Author].[Image] AS [Image], 
+    [Author].[Role] AS [Role]
     FROM [dbo].[Author] AS [Author]</DefiningQuery>
           </EntitySet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="NarailDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="NarailDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Author" EntityType="NarailDBModel.Author" />
+        </EntityContainer>
         <EntityType Name="Author">
           <Key>
             <PropertyRef Name="ıd" />
@@ -57,10 +61,8 @@ warning 6002: The table/view 'NarailDB.dbo.Author' does not have a primary key d
           <Property Name="ModifyDate" Type="DateTime" Precision="3" />
           <Property Name="ModifyBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Image" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="NarailDBEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Author" EntityType="Self.Author" />
-        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -70,16 +72,17 @@ warning 6002: The table/view 'NarailDB.dbo.Author' does not have a primary key d
           <EntitySetMapping Name="Author">
             <EntityTypeMapping TypeName="NarailDBModel.Author">
               <MappingFragment StoreEntitySet="Author">
-                <ScalarProperty Name="ıd" ColumnName="ıd" />
-                <ScalarProperty Name="NameSurname" ColumnName="NameSurname" />
-                <ScalarProperty Name="About" ColumnName="About" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
-                <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
-                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
-                <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
                 <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="ModifyBy" ColumnName="ModifyBy" />
+                <ScalarProperty Name="ModifyDate" ColumnName="ModifyDate" />
+                <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+                <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="About" ColumnName="About" />
+                <ScalarProperty Name="NameSurname" ColumnName="NameSurname" />
+                <ScalarProperty Name="ıd" ColumnName="ıd" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

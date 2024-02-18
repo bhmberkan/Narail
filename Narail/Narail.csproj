@@ -3597,6 +3597,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\AuthorAdminController.cs" />
     <Compile Include="Controllers\BlogAdminController.cs" />
     <Compile Include="Controllers\contactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -3854,6 +3855,7 @@
     <Content Include="Views\shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\BlogAdmin\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\AuthorAdmin\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

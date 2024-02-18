@@ -24,5 +24,6 @@ namespace Narail.Models
         public Nullable<System.DateTime> ModifyDate { get; set; }
         public string ModifyBy { get; set; }
         public string Image { get; set; }
+        public string Role { get; set; }
     }
 }
