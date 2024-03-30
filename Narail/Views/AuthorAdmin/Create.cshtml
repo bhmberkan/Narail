@@ -1,0 +1,77 @@
+﻿@model Narail.Models.Author
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="header">
+                <h2>
+                    Yazar Ekleme Sayfası
+                </h2>
+                <ul class="header-dropdown m-r--5">
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">more_vert</i>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="body">
+                @*ilk kısım gidceği sayfa,(create), sonra controller'ı yazıyoruz  sonra formun metodunu girdik post  sonra resim gönderiyorsak karşı tarafın anlaması için enctype*@
+                @using (Html.BeginForm("Create", "AuthorAdmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    <label for="email_address">Yazar Resmi</label>
+                    <div class="form-group">
+                        <div class="form-line">
+                            <input type="file" id="File" name="File" accept=".jpg,.JPG,.PNG,.png,.jpeg,.JPEG" class="form-control" />
+                        </div>
+                    </div>
+                    <label for="email_address">Ad Soyad</label>
+                    <div class="form-group">
+                        <div class="form-line">
+                            @Html.EditorFor(model => model.NameSurname, new { htmlAttributes = new { @class = "form-control", @maxlength = "50", @required = "reguired" } })
+                        </div>
+                    </div>
+                    <label for="password">Email</label>
+                    <div class="form-group">
+                        <div class="form-line">
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @maxlength = "50", @required = "reguired" } })
+                        </div>
+                    </div>
+                    <label for="password">Yazar Hakkında</label>
+                    <div class="form-group">
+                        <div class="form-line">
+                            @Html.EditorFor(model => model.About, new { htmlAttributes = new { @class = "form-control", @maxlength = "150", @required = "reguired" } })
+                        </div>
+                    </div>
+
+                    <label for="password">Şifre </label>
+                    <div class="form-group">
+                        <div class="form-line">
+                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @maxlength = "50", @required = "reguired", @type = "password" } })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.RadioButton("Role", "Admin", new { @checked = true, @id = "admin" })
+                        @*<input type="radio" name="gender" id="male" class="with-gap">*@
+                        <label for="admin">Admin</label>
+
+                        @Html.RadioButton("Role", "User", new { @id = "user" })
+                        <label for="user" class="m-l-20">User</label>
+                    </div>
+                    <br>
+                    <div align="center">
+                        <input type="submit" class="btn btn-success m-t-15 waves-effect" value="Yazar Kaydet">
+
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+

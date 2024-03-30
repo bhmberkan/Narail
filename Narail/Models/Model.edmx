@@ -5,13 +5,11 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="NarailDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'NarailDB.dbo.Author' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="Author">
           <Key>
-            <PropertyRef Name="ıd" />
+            <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ıd" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="NameSurname" Type="nvarchar" MaxLength="50" />
           <Property Name="About" Type="nvarchar" MaxLength="250" />
           <Property Name="Email" Type="nvarchar" MaxLength="50" />
@@ -24,21 +22,7 @@ warning 6002: The table/view 'NarailDB.dbo.Author' does not have a primary key d
           <Property Name="Role" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityContainer Name="NarailDBModelStoreContainer">
-          <EntitySet Name="Author" EntityType="Self.Author" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [Author].[ıd] AS [ıd], 
-    [Author].[NameSurname] AS [NameSurname], 
-    [Author].[About] AS [About], 
-    [Author].[Email] AS [Email], 
-    [Author].[Password] AS [Password], 
-    [Author].[AddedDate] AS [AddedDate], 
-    [Author].[AddedBy] AS [AddedBy], 
-    [Author].[ModifyDate] AS [ModifyDate], 
-    [Author].[ModifyBy] AS [ModifyBy], 
-    [Author].[Image] AS [Image], 
-    [Author].[Role] AS [Role]
-    FROM [dbo].[Author] AS [Author]</DefiningQuery>
-          </EntitySet>
+          <EntitySet Name="Author" EntityType="Self.Author" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -49,9 +33,9 @@ warning 6002: The table/view 'NarailDB.dbo.Author' does not have a primary key d
         </EntityContainer>
         <EntityType Name="Author">
           <Key>
-            <PropertyRef Name="ıd" />
+            <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ıd" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="NameSurname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="About" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -82,7 +66,7 @@ warning 6002: The table/view 'NarailDB.dbo.Author' does not have a primary key d
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="About" ColumnName="About" />
                 <ScalarProperty Name="NameSurname" ColumnName="NameSurname" />
-                <ScalarProperty Name="ıd" ColumnName="ıd" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

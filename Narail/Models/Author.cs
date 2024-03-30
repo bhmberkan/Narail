@@ -14,7 +14,7 @@ namespace Narail.Models
     
     public partial class Author
     {
-        public int ıd { get; set; }
+        public int ID { get; set; }
         public string NameSurname { get; set; }
         public string About { get; set; }
         public string Email { get; set; }

@@ -73,13 +73,14 @@
                                 </td>
 
                                 <td>
-                                    <span class="btn bg-cyan waves-effect" id="detail" data-toggle="tooltip" data-placement="top" title="" data-original-title="Detayı Gör" onclick="createModal('@Url.Action("Details", "AuthorAdmin" , new {id=item.ıd })')">
+                                    @*oneclick ile modelin açılmasını sağladık*@
+                                    <span class="btn bg-cyan waves-effect" id="detail" data-toggle="tooltip" data-placement="top" title="" data-original-title="Detayı Gör" onclick="createModal('@Url.Action("Details", "AuthorAdmin" , new {id=item.ID })')">
                                         <i class="material-icons"> folder</i>
                                     </span>
 
-                                    <a class="btn bg-purple waves-effect" data-toggle="tooltip" data-placement="top" title="" data-original-title="Düzenle" href="@Url.Action("Edit", "AuthorAdmin" , new {id=item.ıd })">  <i class="material-icons">mode_edit</i></a>
+                                    <a class="btn bg-purple waves-effect" data-toggle="tooltip" data-placement="top" title="" data-original-title="Düzenle" href="@Url.Action("Edit", "AuthorAdmin" , new {id=item.ID })">  <i class="material-icons">mode_edit</i></a>
 
-                                    <a class="btn bg-red waves-effect" data-target="#deleteAuthor" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sil" onclick="JavaSend(@item.ıd)">  <i class="material-icons">delete</i></a>
+                                    <a class="btn bg-red waves-effect" data-target="#deleteAuthor" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sil" onclick="JavaSend(@item.ID)">  <i class="material-icons">delete</i></a>
 
                                     <script>
                                         function JavaSend(id) {
@@ -99,6 +100,8 @@
         </div>
     </div>
 </div>
+
+
 <div class="modal fade" id="myModal">
     <div class="modal-dialog ">
         <div class="modal-content" id="modelContent" style="top:50px;">
@@ -107,6 +110,8 @@
 </div>
 <script src="~/Content/Site/js/jquery.js"></script>
 
+
+@*yukarıdaki oneclick e basınca ne olacak onu belirtiyoruz createmodal di adı bir url alacak urlyi yükleyip modeli açacak*@ 
 <script>
     function createModal(url) {
         $('#modelContent').load(url);

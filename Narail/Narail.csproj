@@ -3582,6 +3582,7 @@
     <Content Include="Content\site\js\SmoothScroll.js" />
     <Content Include="Content\site\js\wow.js" />
     <Content Include="Global.asax" />
+    <Content Include="images\users\IMG_20221120_222800_820.jpg" />
     <Content Include="Models\Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model.Context.cs</LastGenOutput>
@@ -3856,6 +3857,12 @@
     <Content Include="Views\BlogAdmin\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\AuthorAdmin\Index.cshtml" />
+    <Content Include="Views\AuthorAdmin\Create.cshtml" />
+    <Content Include="Views\AuthorAdmin\Details.cshtml" />
+    <Content Include="Views\AuthorAdmin\Edit.cshtml" />
+    <Content Include="Views\shared\_LeftsideBar.cshtml" />
+    <Content Include="Views\shared\_RightsideBar.cshtml" />
+    <Content Include="Views\shared\_TopBar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
