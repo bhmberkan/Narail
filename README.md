@@ -35,9 +35,9 @@ Bu eğitimde Genel mvc şablonunun neler olduğunu öğrendim. Backend için ço
 ## 📷 Fotograflar
 
 
-![localhost_44304_ (1)](https://github.com/user-attachments/assets/c55c5141-5673-4cb2-acef-ee52e561b107)
-
-## 📷 Fotograflar2
+![image](https://github.com/user-attachments/assets/e20f027c-cac2-4561-ae39-a6b2529b9ba7)
+<br>
+![image](https://github.com/user-attachments/assets/bfb96a2a-6485-4463-b1b7-57cd106342cb)
 
 <br>
 ![image](https://github.com/user-attachments/assets/f566cc26-0de8-4586-9f5d-d37a7be70bf6)
